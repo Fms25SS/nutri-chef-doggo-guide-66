@@ -216,10 +216,6 @@ const Index = () => {
                       disabled={!refundData.email || !refundData.reason}
                       onClick={() => {
                         setShowRefundSuccess(true);
-                        setTimeout(() => {
-                          setShowRefundSuccess(false);
-                          setRefundData({email: "", reason: ""});
-                        }, 3000);
                       }}
                     >
                       Solicitar Reembolso
